@@ -1,0 +1,276 @@
+
+@media (max-width: 992px){
+    .background__image{
+        background-attachment: unset;
+    }
+
+
+    .sidebar__list{
+        ul > a{
+            padding: 0.7rem 4rem;
+            width: 25rem;
+        }
+    }
+
+    .sidebar__pages > span{
+        font-size: 1.4rem;
+    }
+
+    .sidebar__menu{
+        font-size: 1.6rem;
+    }
+
+
+    #prev, #next, #owlnext, #owlprev{
+        font-size: 1.5rem;
+    }
+
+    .togglemenu{
+        display: block;
+    }
+
+    .brand__wrapper{
+        text-align: left;
+    }
+    .header__main__iconwrap{
+        display: none;
+    }
+    .header__list{
+        display: none;
+    }
+
+    #cart{
+        width: 70%;
+    }
+
+    .footer__col{
+        text-align: center;
+    }
+    .footer__payment{
+        background-position: center;
+    }
+    .footer__checked{
+        background-position: center;
+    }
+    
+    .productwrap__desc{
+        text-align: center;
+        padding: 2rem 3rem;
+
+        .product__desc{
+            width: 70%;
+            margin: 2rem auto 0;
+            
+
+            &--name{
+                text-align: left;
+            }
+
+            &--price{
+                text-align: right;
+            }
+        }
+
+        select[name="size"]{
+            margin: 4rem auto 0;
+            width: 70%;
+        }
+
+        .product__addtocart{
+            width: 70%;
+            margin: 2rem auto 0;
+
+            & > button{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+
+
+    .header__main__utilities-content{
+        width: 21rem !important;
+        font-size: 1.6rem;
+    }
+    .search__item{
+        width: 15rem;
+        height: 3.2rem;
+    }
+
+    .linkingmenu{
+        height: 4rem;
+
+        & > div > ul{
+            line-height: 4rem;
+        }
+    }
+    .newarrival__title, .bestseller__title, .premium__title, .saleoff__title{
+        padding: 2.5rem 0 1.5rem;
+
+        & > span{
+            font-size: 3rem;
+        }
+    }
+
+    .carousel__wrapper{
+        margin: 2.5rem auto;
+    }
+
+
+
+    #cart{
+        width: 85%;
+    }
+    .support__title > span{
+        font-size: 3.2rem;
+    }
+    .background__image__text__body{
+        font-size: 4rem;
+    }
+    .background__image__text__title--reverse{
+        font-size: 4rem;
+    }
+    .header__contact{
+        justify-content: center;
+    }
+    .footer__end-menu{
+        float:none;
+        margin: none;
+    }
+    .footer__end-description{
+        float:none;
+        padding: unset;
+        & > p{
+            margin: unset;
+        }
+    }
+
+    .brand__wrapper{
+        text-align: left;
+    }
+
+    .productwrap__desc{
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .u-padding-top-bottom-8{
+        padding: 8rem 0;
+    }
+
+
+}
+
+@media (max-width: 576px) { 
+
+
+    .footer{
+
+        &__content-body{
+            font-size: 1rem;
+        }
+
+        &__support-list{
+            font-size: 1rem;
+        }
+
+        &__about-list{
+            font-size: 1rem;
+        }
+
+        &__subscribe-title{
+            font-size: 1rem;
+        }
+
+        &__about-title, &__support-title{
+            font-size: 1.3rem;
+        }
+
+        &__end{
+            font-size: 1rem;
+        }
+    }
+
+    .u-padding-top-bottom-8{
+        padding: 4rem 0;
+    }
+
+    .premiumwrapper__product, .bestsellerwrapper__product, .newarrivalwrapper__product, .saleoffwrapper__product{
+        font-size: 0.9rem;
+    }
+    
+    .layer{
+        height: 2.5rem;
+    }
+
+    .sale{
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .mycart{
+        height: 6rem;
+
+        &__title{
+            font-size: 2.4rem;
+        }
+    }
+
+    .cart__back, .cart__removeall, .add, .minus{
+        font-size: 1.7rem;
+    }
+
+    .cart__value{
+        width: 1.9rem;
+        height: 1.9rem;
+        padding: 0 0 2px;
+    }
+
+    .cart__name, .cart__price{
+        font-size: 1.2rem;
+    }
+
+    .cart__total{
+        height: 9rem;
+
+        & > div > span{
+            font-size: 1.8rem;
+        }
+    }
+    .pay__button{
+        width: 16.5rem;
+    }
+
+    #items{
+        margin-top: 2rem;
+    }
+
+    .sidebar{
+        width: 85%;
+    }
+
+    #cart{
+        width: 97%;
+    }
+    .u-padding-left-4{
+        padding: 0 5.5rem;
+    }
+    .linkingmenu{
+        padding-left: 3rem;
+    }
+    .support__note{
+        text-align: center;
+    }
+    .support__title{
+        padding: 3.5rem 0 1.5rem;
+    }
+    .support__note{
+        margin: 3rem 2rem 0;
+    }
+
+
+}

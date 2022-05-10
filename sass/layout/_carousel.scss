@@ -1,0 +1,40 @@
+.carousel__wrapper{
+    width: 90%;
+    margin: 8.5rem auto;
+    overflow: hidden;
+    position:relative;
+}
+.carousel__slide{
+    display: flex;
+    width: 100%;
+
+
+    & > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+#prev{
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    opacity: 0.8;
+    background-color: white;
+}
+#next{
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    opacity: 0.8;
+    background-color: white;
+}

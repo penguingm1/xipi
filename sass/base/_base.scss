@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #f6f3e4;
+}
+
+a, a:hover{
+    color: unset;
+    text-decoration: unset;
+}
+
+
+dl, ol, ul, p{
+    margin: unset;
+    padding: unset;
+}
+$grid-gutter-width: 0rem;
+.toast{
+    display: unset;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stickymenu {
+    top: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+

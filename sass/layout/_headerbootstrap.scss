@@ -1,0 +1,122 @@
+.header__contact{
+    height: 4rem;
+    background-color: #212121;
+    display: flex;
+    font-size: 1.2rem;
+    color: #eee;
+    font-weight: 300;
+
+
+    &--item{
+        line-height: 4rem;
+        margin: 0 15px; 
+    }
+
+    &--phone{
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
+}
+
+.contact__detail{
+    font-weight: 300; 
+    
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+.wrapper{
+    height: 7.5rem;
+}
+.header__main{
+    z-index: 20;
+    width: 100%;
+    height: 75px;
+    background-color: #f6f3e4;
+    border-bottom: 0.1rem solid rgba(206, 206, 206,0.4);
+    text-align: center;
+
+    &__iconwrap{
+        height: auto;
+        margin: auto;
+    }
+
+    &__icon{
+
+        height: auto;
+        width: 15rem;
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__brand{
+        height: auto;
+        text-align: center;
+        position: relative;
+
+        
+    }
+
+    &__utilities{
+        height: auto;
+
+        &-content{
+            position: relative;
+            float: right;
+            height: 100%;
+            width: 11rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.2rem;
+
+        }
+    }
+}
+
+.brand__image{
+    padding: 1.5rem 0;
+}
+
+.header__list{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f3e4;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    &--item{
+        font-family: montserrat;
+        font-size: 1.4rem;
+        transition: all .2s ease-out;
+        font-weight: 500;
+        width: 12.5%;
+        height: 100%;
+
+        & > a{
+            text-decoration: none;
+            color: $color-black;
+            padding: 1.5rem 1.8rem;
+            display: block;
+            line-height: 3rem;
+            position: relative;
+
+            & > span{
+                z-index: 20;
+                position: relative
+            }
+        }
+    }
+}
+
+.utilities--item-1:nth-child(2){
+    position: absolute;
+    left: 1.5rem;
+}

@@ -1,0 +1,32 @@
+.linkingmenu{
+
+    background-color: $color-outer;
+    height: 5rem;
+    background-color: #212121;
+    
+    &__body{
+
+        &> ul{
+            line-height: 5rem;
+        }
+
+        & > ul > li{
+            display: inline-block;
+            font-weight: 500;
+
+            & > a {
+                text-decoration: none;
+                color: white;
+            }
+
+            & + li::before{
+                content: "\f105";
+                display: inline-block;
+                font-family: FontAwesome;
+                font-weight: 500;
+                padding: 0 0.8rem;
+                color: white;
+            }
+        }
+    }
+}

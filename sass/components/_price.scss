@@ -1,0 +1,10 @@
+.price{
+    &--normal{
+        text-decoration: line-through;
+    }
+
+    &--sale{
+        padding-left: 0.5rem;
+        color: red;
+    }
+}

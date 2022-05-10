@@ -1,0 +1,123 @@
+.background{
+
+    &__image{
+        max-width: 100%;
+        min-height: 100vh;
+        background-attachment: fixed;
+
+        &__text{
+            position: relative;
+            color: white;
+            width: 90vw;
+            height: 50%;
+            text-align: center;
+            font-family: arsenal;
+            
+    
+            &__title{
+                font-size: 1.8rem;
+                font-weight: 600;
+                font-style: italic;
+                letter-spacing: 0.5px;
+                line-height: 1;
+    
+                &--reverse{
+                    font-size: 6rem;
+                    line-height: 1;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transition: all 0.2s ease-out;
+                }
+    
+            }
+    
+            &__body{
+                margin: 2rem 0;
+                font-size: 6rem;
+                line-height: 1;
+                font-weight: 600;
+                text-transform: uppercase;
+                white-space: nowrap;
+                transition: all 0.2s ease-out;
+    
+                &--reverse{
+                    margin: 2rem 0;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    font-style: italic;
+                    letter-spacing: 0.5px;
+                    line-height: 1;
+                }
+    
+            }
+    
+            &__adding{
+                display: inline-block;
+                line-height: 1.75;
+                font-size: 1.4rem;
+                font-weight: 600;
+                letter-spacing: 0.3px;
+                text-align: center;
+                text-decoration: none;
+                color: $color-white;
+                padding: 0.8rem 3.6rem;
+                transition: all .3s ease-out;
+
+                &:hover{
+                    background-color: $color-button-hover;
+                }
+            }   
+        }
+    }
+    
+    .background__image__item-1{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xipimain1.png);
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .background__image__item-2{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xipimain2.png);    
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .background__image__item-3{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xipimain3.jpg);
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .background__image__item-4{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xipimain3.png);
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

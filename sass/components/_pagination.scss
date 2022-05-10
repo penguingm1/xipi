@@ -1,0 +1,30 @@
+.paginationnormal{
+
+    margin-top: 2rem;
+    
+    &__pages{
+        display: flex;
+        justify-content: center;
+
+        & > li{
+            float: left;
+            padding: 0 1.6rem;
+            list-style: none;
+
+            & > a{
+                text-decoration: none;
+                color: $color-black;
+            }
+
+            &:last-child{
+
+                &::after{
+                    content: "\f105";
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

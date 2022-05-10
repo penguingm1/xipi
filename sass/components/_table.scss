@@ -1,0 +1,28 @@
+
+table{
+    width: 98%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+    padding: 1rem 0 1rem 2rem;
+}
+th{
+    padding: 1rem 0 1rem 2rem;
+}
+tbody>tr{
+    border-bottom: 1px solid black;
+}
+.commontable{
+
+    &__title{
+        padding: 6.5rem 0 2.5rem;
+        text-align: center;
+        
+        & > span{
+            font-size: 4.4rem;
+            font-weight: 500;
+        }
+    }
+}

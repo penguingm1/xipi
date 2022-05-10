@@ -1,0 +1,9 @@
+.rownormal{
+    width: 100%;
+
+    @include clearfix;
+}
+.col-1-of-4{
+    float: left;
+    width: 25%;
+}

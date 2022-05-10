@@ -1,0 +1,134 @@
+.header__contact{
+    height: 4rem;
+    background-color: $color-outer;
+    display: flex;
+    font-size: 1.2rem;
+    color: $color-black;
+    font-weight: 300;
+
+    &--item{
+        line-height: 4rem;
+        margin: 0 15px; 
+    }
+
+    &--phone{
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
+}
+
+.contact__detail{
+    font-weight: 300; 
+    
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+.wrapper{
+    height: 75px;
+}
+.header__main{
+    height: 75px;
+    background-color: white;
+    border-bottom: 0.1rem solid rgba(206, 206, 206,0.4);
+    text-align: center;
+
+    &__iconwrap{
+        height: 100%;
+        width: 15vw;
+        float:left;
+    }
+
+    &__icon{
+        margin-left: 2.7rem;
+        height: 100%;
+        width: 15rem;
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -0.7rem;
+    }
+
+    &__icon-2{
+        margin-top: 2rem;
+        height: 100%;
+        width: 15rem;
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__brand{
+        height: 100%;
+        width: 68vw;
+        float: left;
+        text-align: center;
+        position: relative;
+
+        .brand__image{
+            position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+    }
+
+    &__utilities{
+        height: 100%;
+        width: 15vw;
+        float: right;
+
+        &-content{
+            height: 100%;
+            width: 11rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.2rem;
+            margin-top: -0.7rem;
+            margin-left: 6rem;
+        }
+    }
+}
+
+
+.header__list{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    position:-webkit-sticky;
+    left: 0;
+    right: 0;
+
+    &--item-1{
+        font-family: arsenal;
+        font-size: 1.7rem;
+        transition: all .2s ease-out;
+        font-weight: 300;
+
+        & > a{
+            text-decoration: none;
+            color: $color-black;
+            padding: 1.5rem 1.8rem;
+            display: block;
+            line-height: 3rem;
+            position: relative;
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .header__list{
+        display: none;
+    }
+}
+
