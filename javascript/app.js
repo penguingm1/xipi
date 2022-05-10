@@ -1,3 +1,76 @@
+    // BANNER CAROUSEL //
+
+    var carouselwrap = document.getElementsByClassName('carousel__wrapper')[0];
+    setTimeout(function(){
+        carouselwrap.style.visibility = 'unset';
+    }, 50);
+
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var slide = document.getElementsByClassName('carousel__slide')[0];
+
+
+ 
+var carouselimg = document.querySelectorAll('.carousel__slide img');
+if (carouselimg.length !== 0){
+    var size = carouselimg[1].clientWidth;
+}
+
+if (slide){
+    var counter = 1;
+    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
+
+    next.addEventListener('click', function(e){
+        if (counter >= carouselimg.length-1){
+            return;
+        }
+        slide.style.transition = 'all '+ (transitiontime)+ 's' + ' ease-out';
+        counter++;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
+        slide.style.webkitTransform =  'translateX(' + (-size * counter) + 'px)';
+    })
+    prev.addEventListener('click', function(e){
+        if (counter <= 0){
+            return;
+        }
+        slide.style.transition = 'all '+ (transitiontime)+ 's' + ' ease-out';
+        counter--;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        slide.style.webkitTransform =  'translateX(' + (-size * counter) + 'px)';
+    })
+
+    slide.addEventListener('transitionend', function(e){
+        if (carouselimg[counter].id === 'lastimg'){
+            slide.style.transition = "none";
+            counter = carouselimg.length - 2;
+            slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        }
+        if (carouselimg[counter].id === 'firstimg'){
+            slide.style.transition = "none";
+            counter = carouselimg.length - counter;
+            slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        }
+    })
+}
+
+// BANNER CAROUSEL //
+
+// SET INTERVAL FOR BANNER CAROUSEL //
+
+if (slide){
+    setInterval(function(){
+        if (counter >= carouselimg.length-1){
+            return;
+        }
+        slide.style.transition = 'all ' + (transitiontime)+ 's' + ' ease-out';
+        counter++;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
+    }, 6000);
+}
+
+// SET INTERVAL FOR BANNER CAROUSEL //
+
+
 
     // CREATE CART BASIC HTML //
 
@@ -478,69 +551,7 @@ else{
     itemsperscreen = 1;
 }
 
-// BANNER CAROUSEL //
 
-var prev = document.getElementById('prev');
-var next = document.getElementById('next');
-var slide = document.getElementsByClassName('carousel__slide')[0];
-var carouselimg = document.querySelectorAll('.carousel__slide img');
-if (carouselimg.length !== 0){
-    var size = carouselimg[1].clientWidth;
-}
-
-if (slide){
-    var counter = 1;
-    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';   
-
-    next.addEventListener('click', function(e){
-        if (counter >= carouselimg.length-1){
-            return;
-        }
-        slide.style.transition = 'all '+ (transitiontime)+ 's' + ' ease-out';
-        counter++;
-        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
-        slide.style.webkitTransform =  'translateX(' + (-size * counter) + 'px)';
-    })
-    prev.addEventListener('click', function(e){
-        if (counter <= 0){
-            return;
-        }
-        slide.style.transition = 'all '+ (transitiontime)+ 's' + ' ease-out';
-        counter--;
-        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        slide.style.webkitTransform =  'translateX(' + (-size * counter) + 'px)';
-    })
-
-    slide.addEventListener('transitionend', function(e){
-        if (carouselimg[counter].id === 'lastimg'){
-            slide.style.transition = "none";
-            counter = carouselimg.length - 2;
-            slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        }
-        if (carouselimg[counter].id === 'firstimg'){
-            slide.style.transition = "none";
-            counter = carouselimg.length - counter;
-            slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        }
-    })
-}
-
-// BANNER CAROUSEL //
-
-// SET INTERVAL FOR BANNER CAROUSEL //
-
-if (slide){
-    setInterval(function(){
-        if (counter >= carouselimg.length-1){
-            return;
-        }
-        slide.style.transition = 'all ' + (transitiontime)+ 's' + ' ease-out';
-        counter++;
-        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
-    }, 6000);
-}
-
-// SET INTERVAL FOR BANNER CAROUSEL //
 
 
 // OWL CAROUSEL //

@@ -3,11 +3,12 @@
     margin: 8.5rem auto;
     overflow: hidden;
     position:relative;
+    visibility: hidden;
 }
 .carousel__slide{
     display: flex;
     width: 100%;
-
+    
 
     & > img {
         max-width: 100%;

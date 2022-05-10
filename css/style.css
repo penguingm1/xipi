@@ -627,7 +627,8 @@ tbody > tr {
   width: 90%;
   margin: 8.5rem auto;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  visibility: hidden; }
 
 .carousel__slide {
   display: flex;
